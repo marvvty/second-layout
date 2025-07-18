@@ -1,0 +1,203 @@
+:root{
+    --primary-color: #1B1C57;
+    --secondary-color: #F59E0B;
+    --gray:#888B97;
+    --third-color: #0E1735;
+    --font-family: 'Lexend';
+    --left-offset: 120px;
+    --main-width: 1560px;
+}
+body{
+    font-family: var(--font-family);
+}
+.overlay{
+    display: grid;
+    grid-template-columns: var(--left-offset) 1fr;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 70px;
+}
+.header__title{
+    display: flex;
+    flex-direction: column;
+    width: 293px;
+    gap: 10px;
+}
+.header__title--wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header__title-rectangle{
+    width: 32px;
+    height: 1px;
+    background-color: var(--secondary-color);
+}
+.header__title-subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+.header__title-main{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+    align-self: end;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: end;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    border:none;
+    background-color: #FFFFFF;
+    color: var(--gray);
+    font-family: Lexend;
+    font-weight: 400;
+    font-size: 16px;
+}
+.header_nav-btn--active{
+    background-color: #D1FAE5;
+    color: #10B981;
+}
+.header_nav-btn--active:hover{
+    background-color: #A7F3D0;
+}
+.header_nav-btn--inactive{
+    border: 1px solid #E0E3EB;
+}
+.header_nav-btn--inactive:hover{
+    background-color: #F3F4F6;
+}
+.header__controls{
+    display: flex;
+    align-self: end;
+    gap: 16px;
+}
+.header__controls-btn{
+    padding: 12px 16px;
+}
+.header__controls-btn--left{
+    background-color: #E0E3EB;
+}
+.header__controls-btn--left:hover{
+    background-color: #D1D5DB;
+}
+.header__controls-btn--right{
+    background-color: #10B981;
+}
+.header__controls-btn--right:hover{
+    background-color: #059669;
+}
+.main{
+    width: var(--main-width);
+}
+.main__content{
+    display: flex;
+    height: 600px;
+    gap: 40px;
+    font-weight: 400;
+    justify-content: space-around;
+    align-items: center;
+}
+.property-card{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.property-card__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+.property-card__image{
+    position: relative;
+    border-radius: 24px;
+    height: 382px;
+    width: 340px;
+}
+.property-card__image--first{
+     background-image: url(../asserts/images/houses/roselands.jpg);
+}
+.property-card__plage{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 32px;
+    gap: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+.property-card__plage--popular{
+    background-color: #FEE2E2;
+    color: #EF4444;
+}
+.property-card__details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.property-card__title{
+    color: var(--third-color);
+    font-size: 24px;
+}
+.property-card__price{
+    color:#3C4563;
+    font-size: 20px
+}
+.property-card__user{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.property-card__user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.property-card__user-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.property-card__user-name{
+    font-size: 18px;
+    color: var(--third-color);
+}
+.property-card__user-city{
+    font-size: 14px;
+    color: var(--gray);
+}
+.property-card__image--second{
+     background-image: url(../asserts/images/houses/woodlandside.jpg);
+}
+.property-card__plage--new-house{
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+.property-card__image--third{
+     background-image: url(../asserts/images/houses/lighthouse.jpg);
+}
+.property-card__plage--best-deals{
+    background-color: #D1FAE5;
+    color: #047857;
+}
+.property-card__image--fourth{
+     background-image: url(../asserts/images/houses/cosmos1.jpg);
+     background-size: 100%;
+     background-repeat: no-repeat;
+}

@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>House</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="overlay">
         <div></div>
-        <div class="container">
+        <div class="overlay__container">
         <nav class="nav">
             <div class="title-section">
                 <div class="title-section__wrapper">
@@ -37,9 +37,10 @@
         <main class="main">
             <section class="card">
                 <div class="property-card">
-                    <div class="property-card__wrapper">
-                    <div class="property-card__image property-card__image--first">
-                        <div class="property-card__plage property-card__plage--popular">
+                    <div class="property-card__item">
+                    <div class="property-card__image">
+                        <img src="asserts/images/houses/roselands.jpg">
+                        <div class="property-card__badge property-card__badge-popular">
                             <img src="asserts/images/icons/fire.svg" class="property-badge-icon">
                             Popular
                         </div>
@@ -51,15 +52,18 @@
                     <div class="property-card__user">
                         <img src="asserts/images/avatars/Dianne-Russel.jpg" class="avatar property-card__user-avatar" alt="user image">
                         <div class="property-card__user-info">
+                            <a href="#" class="link">
                             <p class="property-card__user-name">Dianne Russel</p>
                             <p class="property-card__user-city">Manchester, Kentucky</p>
+                            </a>
                         </div>
                     </div>
                     </div>
 
-                    <div class="property-card__wrapper">
-                    <div class="property-card__image property-card__image--second">
-                        <div class="property-card__plage property-card__plage--new-house">
+                    <div class="property-card__item">
+                    <div class="property-card__image">
+                        <img src="asserts/images/houses/woodlandside.jpg">
+                        <div class="property-card__badge property-card__badge-new">
                             <img src="asserts/images/icons/house-icon-blue.svg" class="property-badge-icon">
                             New House
                         </div>
@@ -77,9 +81,10 @@
                     </div>
                     </div>
 
-                    <div class="property-card__wrapper">
-                    <div class="property-card__image property-card__image--third">
-                        <div class="property-card__plage property-card__plage--best-deals">
+                    <div class="property-card__item">
+                    <div class="property-card__image">
+                        <img src="asserts/images/houses/lighthouse.jpg">
+                        <div class="property-card__badge property-card__badge-deals">
                             <img src="asserts/images/icons/green-wallet.svg" class="property-badge-icon">
                             Best Deals
                         </div>
@@ -97,9 +102,9 @@
                     </div>
                     </div>
 
-                    <div class="property-card__wrapper">
+                    <div class="property-card__item">
                     <div class="property-card__image property-card__image--fourth">
-                        <div class="property-card__plage property-card__plage--popular">
+                        <div class="property-card__badge property-card__badge-popular">
                             <img src="asserts/images/icons/fire.svg" class="property-badge-icon">
                             Popular
                         </div>
@@ -155,6 +160,21 @@
                     <button class="btn contact-info__btn"><img src="asserts/images/icons/old-phone.svg">Contact Now</button>
                 </div>
                 </div>
+                <div class="container">
+                    <button class="btn image-wrapper__play-button"><img src="asserts/images/icons/play.svg" alt="Play button"></button>
+                    <div class="image-wrapper__video">
+                        <img src="asserts/images/houses/house.jpg" class="image-wrapper__video-image" alt="house video">
+                <div class="gallery__column">
+                    <img src="asserts/images/houses/sofa.jpg" class="image-wrapper__image image-wrapper__image--sofa" alt="Green sofa image">
+                    <div class="gallery__row">
+                    <img src="asserts/images/houses/stand.jpg" class="image-wrapper__image main__image" alt="Stand image">
+                    <img src="asserts/images/houses/room.jpg" class="image-wrapper__image main__image" alt="room image">
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="main__blur"></div>
+                <div class="main__blur main__blur--second"></div>
             </section>
         </main>
         </div>

@@ -1,297 +1,646 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="overlay">
-        <div></div>
-        <div class="overlay__container">
-            <nav class="nav">
-                <div class="title-section">
-                    <div class="title-section__wrapper">
-                        <div class="title-section__rectangle"></div>
-                        <p class="title-section__subtitle">Our Recommendation</p>
-                    </div>
-                    <h1 class="title-section__title">Featured House</h1>
-                </div>
-                <div class="nav__buttons">
-                    <button class="btn nav__btn--active"><img src="asserts/images/icons/house-icon.svg">House</button>
-                    <button class="btn nav__btn--inactive"><img src="asserts/images/icons/villa.svg">Villa</button>
-                    <button class="btn nav__btn--inactive"><img
-                            src="asserts/images/icons/apartment.svg">Apartment</button>
-                </div>
-                <div class="nav__controls">
-                    <button class="btn nav__controls-btn nav__controls-btn--left">
-                        <img src="asserts/images/icons/arrow-left.svg" alt="Previous">
-                    </button>
-                    <button class="btn nav__controls-btn nav__controls-btn--right">
-                        <img src="asserts/images/icons/arrow-right.svg" alt="Next">
-                    </button>
-                </div>
-            </nav>
-            <main class="main">
-                <section class="card">
-                    <div class="property-card">
-                        <div class="property-card__item">
-                            <div class="property-card__image">
-                                <a href="#" class="link">
-                                    <img src="asserts/images/houses/roselands.jpg">
-                                </a>
-                                <div class="property-card__badge property-card__badge-popular">
-                                    <img src="asserts/images/icons/fire.svg" class="property-badge-icon">
-                                    Popular
-                                </div>
-                            </div>
-                            <div class="property-card__details">
-                                <h1 class="property-card__title">Roselands House</h1>
-                                <p class="property-card__price">$ 35.000.000</p>
-                            </div>
-                            <div class="user">
-                                <img src="asserts/images/avatars/dianne-russel.jpg"
-                                    class="avatar user__avatar" alt="user image">
-                                <div class="user-info">
-                                    <p class="user-info__name">Dianne Russel</p>
-                                    <p class="user-info__city">Manchester, Kentucky</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="property-card__item">
-                            <div class="property-card__image">
-                                <a href="#" class="link">
-                                    <img src="asserts/images/houses/woodlandside.jpg">
-                                </a>
-                                <div class="property-card__badge property-card__badge-new">
-                                    <img src="asserts/images/icons/house-icon-blue.svg" class="property-badge-icon">
-                                    New House
-                                </div>
-                            </div>
-                            <div class="property-card__details">
-                                <h1 class="property-card__title">Woodlandside</h1>
-                                <p class="property-card__price">$ 20.000.000</p>
-                            </div>
-                            <div class="user">
-                                <img src="asserts/images/avatars/robert-fox.jpg"
-                                    class="avatar user__avatar" alt="user image">
-                                <div class="user-info">
-                                    <p class="user-info__name">Robert Fox</p>
-                                    <p class="user-info__city">Dr. San Jose, South Dakota</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="property-card__item">
-                            <div class="property-card__image">
-                                <a href="#" class="link">
-                                    <img src="asserts/images/houses/lighthouse.jpg">
-                                </a>
-                                <div class="property-card__badge property-card__badge-deals">
-                                    <img src="asserts/images/icons/green-wallet.svg" class="property-badge-icon">
-                                    Best Deals
-                                </div>
-                            </div>
-                            <div class="property-card__details">
-                                <h1 class="property-card__title">The Old Lighthouse</h1>
-                                <p class="property-card__price">$ 44.000.000</p>
-                            </div>
-                            <div class="user">
-                                <img src="asserts/images/avatars/ronald-richards.jpg"
-                                    class="avatar user__avatar" alt="user image">
-                                <div class="user-info">
-                                    <p class="user-info__name">Ronald Richards</p>
-                                    <p class="user-info__city">Santa Ana, Illinois</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="property-card__item">
-                            <div class="property-card__image property-card__image--fourth">
-                                <div class="property-card__badge property-card__badge-popular">
-                                    <img src="asserts/images/icons/fire.svg" class="property-badge-icon">
-                                    Popular
-                                </div>
-                            </div>
-                            <div class="property-card__details">
-                                <h1 class="property-card__title">Cosmo's House</h1>
-                                <p class="property-card__price">$ 22.000.000</p>
-                            </div>
-                            <div class="user">
-                                <img src="asserts/images/avatars/jenny.jpg" class="avatar user__avatar"
-                                    alt="user image">
-                                <div class="user-info">
-                                    <p class="user-info__name">Jenny Wilson</p>
-                                    <p class="user-info__city">Preston Rd. Inglewood, Maine 98380</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </section>
-                    <section class="main__content">
-            <div class="title-section main__title-wrapper">
-                <div class="title-section__wrapper">
-                    <div class="title-section__rectangle"></div>
-                    <p class="title-section__subtitle">Ready To Sell!</p>
-                </div>
-                <div class="title-section__container">
-                    <h1 class="title-section__title">Let’s tour and see our house!</h1>
-                    <p class="title-section__description">Houses recommended by our partners that have been curated to
-                        become the home of your dreams!</p>
-                    <div class="details">
-                        <p class="details__title">House Detail</p>
-                        <div class="details__info">
-                            <div class="details__row">
-                                <div class="details__item"><img src="asserts/images/icons/bed.svg">4 Bedroom</div>
-                                <div class="details__item"><img src="asserts/images/icons/bath.svg">2 Bathroom</div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__item"><img src="asserts/images/icons/car-garage.svg">1 Carport
-                                </div>
-                                <div class="details__item"><img src="asserts/images/icons/stairs-with-handrail.svg">2
-                                    Floors</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="title-section__separator"></div>
-                <div class="contact-info">
-                    <div class="contact-info__user">
-                        <img src="asserts/images/avatars/dianne-russel.jpg" class="avatar contact-info__user-avatar"
-                            alt="user image">
-                        <div class="contact-info__user-info">
-                            <p class="contact-info__user-name">Dianne Russel</p>
-                            <p class="contact-info__user-position">Manager Director</p>
-                        </div>
-                    </div>
-                    <button class="btn active-btn"><img src="asserts/images/icons/old-phone.svg">Contact
-                        Now</button>
-                </div>
+      <main class="main">
+        <section class="recommendation-section">
+          <nav class="recommendation-section__nav">
+            <div class="title-section">
+              <div class="title-section__wrapper">
+                <div class="title-section__rectangle"></div>
+                <p class="title-section__subtitle">Our Recommendation</p>
+              </div>
+              <h1 class="title-section__title">Featured House</h1>
             </div>
-            <div class="container">
-                <button class="btn image-wrapper__play-button"><img src="asserts/images/icons/play.svg"
-                        alt="Play button"></button>
-                <div class="image-wrapper__video">
-                    <img src="asserts/images/houses/house.jpg" class="image-wrapper__video-image" alt="house video">
-                    <div class="gallery__column">
-                        <img src="asserts/images/houses/sofa.jpg"
-                            class="image-wrapper__image image-wrapper__image--sofa" alt="Green sofa image">
-                        <div class="gallery__row">
-                            <img src="asserts/images/houses/stand.jpg" class="image-wrapper__image main__image"
-                                alt="Stand image">
-                            <img src="asserts/images/houses/room.jpg" class="image-wrapper__image main__image"
-                                alt="room image">
-                        </div>
-                    </div>
-                </div>
+            <div class="nav__buttons">
+              <button class="btn nav__btn--active">
+                <img src="asserts/images/icons/house-icon.svg" />House
+              </button>
+              <button class="btn nav__btn--inactive">
+                <img src="asserts/images/icons/villa.svg" />Villa
+              </button>
+              <button class="btn nav__btn--inactive">
+                <img src="asserts/images/icons/apartment.svg" />Apartment
+              </button>
             </div>
-            <div class="main__blur"></div>
-            <div class="main__blur main__blur--second"></div>
+            <div class="nav__controls">
+              <button class="btn nav__controls-btn nav__controls-btn--left">
+                <img src="asserts/images/icons/arrow-left.svg" alt="Previous" />
+              </button>
+              <button class="btn nav__controls-btn nav__controls-btn--right">
+                <img src="asserts/images/icons/arrow-right.svg" alt="Next" />
+              </button>
+            </div>
+          </nav>
+          <div class="property-card">
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img src="asserts/images/houses/roselands.jpg" />
+                </a>
+                <div class="property-card__badge property-card__badge-popular">
+                  <img
+                    src="asserts/images/icons/fire.svg"
+                    class="property-badge-icon"
+                  />
+                  Popular
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Roselands House</h1>
+                <p class="property-card__price">$ 35.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/dianne-russel.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Dianne Russel</p>
+                  <p class="user-city">Manchester, Kentucky</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img src="asserts/images/houses/woodlandside.jpg" />
+                </a>
+                <div class="property-card__badge property-card__badge-new">
+                  <img
+                    src="asserts/images/icons/house-icon-blue.svg"
+                    class="property-badge-icon"
+                  />
+                  New House
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Woodlandside</h1>
+                <p class="property-card__price">$ 20.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/robert-fox.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Robert Fox</p>
+                  <p class="user-city">Dr. San Jose, South Dakota</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img src="asserts/images/houses/lighthouse.jpg" />
+                </a>
+                <div class="property-card__badge property-card__badge-deals">
+                  <img
+                    src="asserts/images/icons/green-wallet.svg"
+                    class="property-badge-icon"
+                  />
+                  Best Deals
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">The Old Lighthouse</h1>
+                <p class="property-card__price">$ 44.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/ronald-richards.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Ronald Richards</p>
+                  <p class="user-city">Santa Ana, Illinois</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image property-card__image--fourth">
+                <div class="property-card__badge property-card__badge-popular">
+                  <img
+                    src="asserts/images/icons/fire.svg"
+                    class="property-badge-icon"
+                  />
+                  Popular
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Cosmo's House</h1>
+                <p class="property-card__price">$ 22.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/jenny.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Jenny Wilson</p>
+                  <p class="user-city">Preston Rd. Inglewood, Maine 98380</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__content">
+          <div class="title-section main__title-wrapper">
+            <div class="title-section__wrapper">
+              <div class="title-section__rectangle"></div>
+              <p class="title-section__subtitle">Ready To Sell!</p>
+            </div>
+            <div class="title-section__container">
+              <h1 class="title-section__title">
+                Let’s tour and see our house!
+              </h1>
+              <p class="title-section__description">
+                Houses recommended by our partners that have been curated to
+                become the home of your dreams!
+              </p>
+              <div class="details">
+                <p class="details__title">House Detail</p>
+                <div class="details__info">
+                  <div class="details__row">
+                    <div class="details__item">
+                      <img src="asserts/images/icons/bed.svg" />4 Bedroom
+                    </div>
+                    <div class="details__item">
+                      <img src="asserts/images/icons/bath.svg" />2 Bathroom
+                    </div>
+                  </div>
+                  <div class="details__row">
+                    <div class="details__item">
+                      <img src="asserts/images/icons/car-garage.svg" />1 Carport
+                    </div>
+                    <div class="details__item">
+                      <img
+                        src="asserts/images/icons/stairs-with-handrail.svg"
+                      />2 Floors
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="title-section__separator"></div>
+            <div class="contact-info">
+              <div class="contact-info__user">
+                <img
+                  src="asserts/images/avatars/dianne-russel.jpg"
+                  class="avatar contact-info__user-avatar"
+                  alt="user image"
+                />
+                <div class="contact-info__user-info">
+                  <p class="contact-info__user-name">Dianne Russel</p>
+                  <p class="contact-info__user-position">Manager Director</p>
+                </div>
+              </div>
+              <button class="btn active-btn">
+                <img src="asserts/images/icons/old-phone.svg" />Contact Now
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <button class="btn image-wrapper__play-button">
+              <img src="asserts/images/icons/play.svg" alt="Play button" />
+            </button>
+            <div class="image-wrapper__video">
+              <img
+                src="asserts/images/houses/house.jpg"
+                class="image-wrapper__video-image"
+                alt="house video"
+              />
+              <div class="gallery__column">
+                <img
+                  src="asserts/images/houses/sofa.jpg"
+                  class="image-wrapper__image image-wrapper__image--sofa"
+                  alt="Green sofa image"
+                />
+                <div class="gallery__row">
+                  <img
+                    src="asserts/images/houses/stand.jpg"
+                    class="image-wrapper__image main__image"
+                    alt="Stand image"
+                  />
+                  <img
+                    src="asserts/images/houses/room.jpg"
+                    class="image-wrapper__image main__image"
+                    alt="room image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__blur"></div>
+          <div class="main__blur main__blur--second"></div>
         </section>
         <section class="slider">
-            <div class="title-section slider-section">
-                <div class="title-section__wrapper slider-section__subtitle">
-                    <div class="title-section__rectangle"></div>
-                    <p class="title-section__subtitle">See Our Review</p>
+          <div class="title-section slider-section">
+            <div class="title-section__wrapper slider-section__subtitle">
+              <div class="title-section__rectangle"></div>
+              <p class="title-section__subtitle">See Our Review</p>
+            </div>
+            <h1 class="title-section__title slider-section__title">
+              What Our User Say About Us
+            </h1>
+          </div>
+          <div class="slider-list">
+            <ul class="list">
+              <li class="slider-list__item">
+                <img
+                  src="/asserts/images/houses/wood_home.jpg"
+                  class="slider-list__image"
+                  alt="Modern House"
+                />
+                <div class="review">
+                  <div class="review__text">
+                    <h3 class="review__title">My house sold out fast!</h3>
+                    <p class="review__subtitle">
+                      I was finally able to sell my house quickly through
+                      Hounter by immediately setting me up with people who
+                      wanted my house. I also do not get a discount from the
+                      sale of my house. Awesome!
+                    </p>
+                  </div>
+                  <div class="review__user">
+                    <div class="user review__user-info">
+                      <img
+                        src="asserts/images/avatars/henry.jpg"
+                        class="avatar user__avatar"
+                        alt="user image"
+                      />
+                      <div class="user-info">
+                        <p class="user-name review-info__user">
+                          Courtney Henry
+                        </p>
+                        <p class="user-city review-info__user">
+                          CEO Andarafish
+                        </p>
+                      </div>
+                    </div>
+                    <div class="review__star">
+                      <img src="asserts/images/icons/bx_bxs-star.svg" />
+                      <p class="review__number">4.3</p>
+                    </div>
+                  </div>
                 </div>
-                <h1 class="title-section__title slider-section__title">What Our User Say About Us</h1>
-            </div>
-            <div class="slider-list">
-                <ul class="list">
-                    <li class="slider-list__item">
-                            <img src="/asserts/images/houses/wood_home.jpg" class="slider-list__image" alt="Modern House">
-                        <div class="review">
-                            <div class="review__text">
-                            <h3 class="review__title">My house sold out fast!</h3>
-                            <p class="review__subtitle">
-                                I was finally able to sell my house quickly through Hounter
-                                by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!
-                            </p>
-                            </div>
-                            <div class="review__user">
-                                <div class="user review__user-info">
-                                <img src="asserts/images/avatars/henry.jpg"
-                                    class="avatar user__avatar" alt="user image">
-                                <div class="user-info">
-                                    <p class="user-info__name review-info__user">Courtney Henry</p>
-                                    <p class="user-info__city review-info__user">CEO Andarafish</p>
-                                </div>
-                            </div>
-                            <div class="review__star"><img src="asserts/images/icons/bx_bxs-star.svg"><p class="review__number">4.3</p></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="slider-list__item">
-                            <img src="/asserts/images/houses/modern_house.jpg" class="slider-list__image" alt="Modern House">
-                        <div class="review">
-                            <div class="review__text">
-                            <h3 class="review__title">Best! I got the house I wanted through Hounter</h3>
-                            <p class="review__subtitle">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
-                            </div>
-                            <div class="review__user">
-                                <div class="user review__user-info">
-                                <img src="asserts/images/avatars/dianne-russel.jpg"
-                                    class="avatar user__avatar" alt="user image">
-                                <div class="user-info">
-                                    <p class="user-info__name review-info__user">Dianne Russel</p>
-                                    <p class="user-info__city review-info__user">Manager Director</p>
-                                </div>
-                            </div>
-                            <div class="review__star"><img src="asserts/images/icons/bx_bxs-star.svg"><p class="review__number">4.6</p></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="slider-list__item">
-                            <img src="/asserts/images/houses/old_house.jpg" class="slider-list__image" alt="Modern House">
-                        <div class="review">
-                            <div class="review__text">
-                            <h3 class="review__title">Through the Hounter, I can get a house for my self</h3>
-                            <p class="review__subtitle">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
-                            </div>
-                            <div class="review__user">
-                                <div class="user review__user-info">
-                                <img src="asserts/images/avatars/esther.jpg"
-                                    class="avatar user__avatar" alt="user image">
-                                <div class="user-info review-info">
-                                    <p class="user-info__name review-info__user">Esther Howard</p>
-                                    <p class="user-info__city review-info__user">Head of Marketing</p>
-                                </div>
-                            </div>
-                            <div class="review__star"><img src="asserts/images/icons/bx_bxs-star.svg"><p class="review__number">4.6</p></div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="pagination">
-                <img src="asserts/images/icons/Pagination.svg" class="slider__dots">
-            </div>
+              </li>
+              <li class="slider-list__item">
+                <img
+                  src="/asserts/images/houses/modern_house.jpg"
+                  class="slider-list__image"
+                  alt="Modern House"
+                />
+                <div class="review">
+                  <div class="review__text">
+                    <h3 class="review__title">
+                      Best! I got the house I wanted through Hounter
+                    </h3>
+                    <p class="review__subtitle">
+                      Through this website I can get a house with the type and
+                      specifications I want very easily, without a complicated
+                      process to be able to find information on the house we
+                      want.
+                    </p>
+                  </div>
+                  <div class="review__user">
+                    <div class="user review__user-info">
+                      <img
+                        src="asserts/images/avatars/dianne-russel.jpg"
+                        class="avatar user__avatar"
+                        alt="user image"
+                      />
+                      <div class="user-info">
+                        <p class="user-name review-info__user">Dianne Russel</p>
+                        <p class="user-city review-info__user">
+                          Manager Director
+                        </p>
+                      </div>
+                    </div>
+                    <div class="review__star">
+                      <img src="asserts/images/icons/bx_bxs-star.svg" />
+                      <p class="review__number">4.6</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider-list__item">
+                <img
+                  src="/asserts/images/houses/old_house.jpg"
+                  class="slider-list__image"
+                  alt="Modern House"
+                />
+                <div class="review">
+                  <div class="review__text">
+                    <h3 class="review__title">
+                      Through the Hounter, I can get a house for my self
+                    </h3>
+                    <p class="review__subtitle">
+                      By looking for information about what kind of house we
+                      want, we managed to get the house we wanted very quickly,
+                      and directly connected with the seller to be able to ask
+                      about the details, very helpful!
+                    </p>
+                  </div>
+                  <div class="review__user">
+                    <div class="user review__user-info">
+                      <img
+                        src="asserts/images/avatars/esther.jpg"
+                        class="avatar user__avatar"
+                        alt="user image"
+                      />
+                      <div class="user-info review-info">
+                        <p class="user-name review-info__user">Esther Howard</p>
+                        <p class="user-city review-info__user">
+                          Head of Marketing
+                        </p>
+                      </div>
+                    </div>
+                    <div class="review__star">
+                      <img src="asserts/images/icons/bx_bxs-star.svg" />
+                      <p class="review__number">4.6</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <img
+              src="asserts/images/icons/Pagination.svg"
+              class="slider__dots"
+            />
+          </div>
         </section>
 
         <section class="articles">
-            <div class="title-section slider-section">
-                <div class="title-section__wrapper slider-section__subtitle">
-                    <div class="title-section__rectangle"></div>
-                    <p class="title-section__subtitle">See Tips And Trick From Our Partnership</p>
-                </div>
-                <h1 class="title-section__title slider-section__title">Find Out More About
-                    Selling And Buying Homes
-                </h1>
+          <div class="blur articles__blur"></div>
+          <div class="blur articles__blur--second"></div>
+          <div class="title-section articles-section">
+            <div class="title-section__wrapper articles-section__subtitle">
+              <div class="title-section__rectangle"></div>
+              <p class="title-section__subtitle">
+                See Tips And Trick From Our Partnership
+              </p>
             </div>
-            <div class="title-section__button">
+            <h1 class="title-section__title articles-section__title">
+              Find Out More About Selling And Buying Homes
+            </h1>
+          </div>
+          <div class="title-section__button">
             <button class="btn active-btn">More Artikel</button>
+          </div>
+          <div class="article-list">
+            <div class="card-list">
+              <article class="card">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/cool-room.jpg"
+                    class="card__image"
+                    alt="House article 1"
+                  />
+                </a>
+                <div class="card__content">
+                  <div class="card-user">
+                    <img
+                      src="asserts/images/avatars/dianne-russel.jpg"
+                      class="avatar user__avatar card__avatar"
+                      alt="dianne russel avatar"
+                    />
+                    <p class="user-name card__user-name">Dianne Russell</p>
+                  </div>
+                  <a href="#" class="link">
+                    <h5 class="card-title">
+                      The Things We Need To Check When We Want To Buy A House
+                    </h5>
+                  </a>
+                  <div class="card__info">
+                    <img src="asserts/images/icons/clock.svg" />
+                    <p class="card-subtitle">4 min read | 25 Apr 2021</p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/autumn_home.jpg"
+                    class="card__image"
+                    alt="House article 1"
+                  />
+                </a>
+                <div class="card__content">
+                  <div class="card-user">
+                    <img
+                      src="asserts/images/avatars/henry.jpg"
+                      class="avatar user__avatar card__avatar"
+                      alt="dianne russel avatar"
+                    />
+                    <p class="user-name card__user-name">Courtrney Henry</p>
+                  </div>
+                  <a href="#" class="link">
+                    <h5 class="card-title">
+                      7 Ways To Distinguish The Quality Of The House We Want To
+                      Buy
+                    </h5>
+                  </a>
+                  <div class="card__info">
+                    <img src="asserts/images/icons/clock.svg" />
+                    <p class="card-subtitle">6 min read | 24 Apr 2021</p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/old_house.jpg"
+                    class="card__image"
+                    alt="House article 1"
+                  />
+                </a>
+                <div class="card__content">
+                  <div class="card-user">
+                    <img
+                      src="asserts/images/avatars/dalrene_robertson.jpg"
+                      class="avatar user__avatar card__avatar"
+                      alt="dianne russel avatar"
+                    />
+                    <p class="user-name card__user-name">Darlene Robertson</p>
+                  </div>
+                  <a href="#" class="link">
+                    <h5 class="card-title">
+                      The Best Way To Know The Quality Of The House We Want To
+                      Buy
+                    </h5>
+                  </a>
+                  <div class="card__info">
+                    <img src="asserts/images/icons/clock.svg" />
+                    <p class="card-subtitle">2 min read | 24 Apr 2021</p>
+                  </div>
+                </div>
+              </article>
             </div>
+            <article class="card featured-card">
+              <a href="#" class="link">
+                <img
+                  src="asserts/images/houses/ultra-modern-house.jpg"
+                  class="card__image featured-card__image"
+                  alt="House article 1"
+                />
+              </a>
+              <div class="card__content featured-card__content">
+                <div class="card-user">
+                  <img
+                    src="asserts/images/avatars/dalrene_robertson.jpg"
+                    class="avatar user__avatar card__avatar"
+                    alt="dianne russel avatar"
+                  />
+                  <p class="user-name card__user-name">Cameron Williams</p>
+                </div>
+                <a href="#" class="link">
+                  <h5 class="card-title featured-card__title">
+                    12 Things To Know Before Buying A House
+                  </h5>
+                </a>
+                <p class="card-subtitle">
+                  Want to buy a house but are unsure about what we should know,
+                  here I will try to explain what we should know and check when
+                  we want to buy a house
+                </p>
+                <div class="card__info">
+                  <img src="asserts/images/icons/clock.svg" />
+                  <p class="card-subtitle">8 min read | 25 Apr 2021</p>
+                </div>
+              </div>
+            </article>
+          </div>
         </section>
-        </main>
+        <div class="wrapper">
+          <section class="subscribe-section">
+            <img
+              src="asserts/images/subscribe_bg.png"
+              alt="Subscribe Background"
+              class="subscribe-bg"
+            />
+            <div class="title-section subscribe-section__title">
+              <h1 class="title-section__title">
+                Subscribe For More Info And Update From Hounter
+              </h1>
+            </div>
+            <form class="subscribe-form">
+              <img
+                src="asserts/images/icons/eva_email-fill.svg"
+                alt="Subscribe Icon"
+                class="icon"
+              />
+              <input
+                type="email"
+                placeholder="Your email here"
+                class="input subscribe-form__input"
+              />
+              <button type="submit" class="btn active-btn">Subscribe</button>
+            </form>
+          </section>
         </div>
-
+      </main>
+      <footer class="footer">
+        <div class="title-section footer__title-section">
+          <img src="asserts/images/icons/Logo.svg" class="logo" />
+          <p class="title-section__description footer__description">
+            We provide information about properties such as houses, villas and
+            apartments to help people find their dream home
+          </p>
+          <div class="footer__social">
+            <a href="#" class="link footer__link"
+              ><img
+                src="asserts/images/icons/brandico_facebook.svg"
+                class="social-icon"
+                alt="facebook link"
+            /></a>
+            <a href="#" class="link footer__link"
+              ><img
+                src="asserts/images/icons/ant-design_twitter-outlined.svg"
+                class="social-icon"
+                alt="Twitter link"
+            /></a>
+            <a href="#" class="link footer__link"
+              ><img
+                src="asserts/images/icons/ant-design_instagram-filled.svg"
+                class="social-icon"
+                alt="Instagram link"
+            /></a>
+          </div>
+        </div>
+        <div class="footer__list-wrapper">
+          <div class="footer__list-container">
+            <h3 class="list-container__title">Property</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="link footer__link">House</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="link footer__link">Apartment</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="link footer__link">Villa</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h3 class="list-container__title">Article</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="link footer__link">New Article</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="link footer__link">Popular Article</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="link footer__link">Most Read</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="link footer__link">Tips & Tricks</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h3 class="list-container__title">Contact</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <p class="footer__link">
+                  2464 Royal Ln. Mesa, New Jersey 45463
+                </p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__link">(671) 555-0110</p>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="link footer__link">info@hounter.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="blur page-blur"></div>
+      <div class="blur page-blur--second"></div>
     </div>
-</body>
-
+  </body>
 </html>

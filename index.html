@@ -6,6 +6,7 @@
     <title>House</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
@@ -25,30 +26,56 @@
               <h1 class="title-section__title">Featured House</h1>
             </div>
             <div class="nav__buttons">
-              <button class="btn nav__btn--active">
-                <img src="asserts/images/icons/house-icon.svg" />House
+              <button id="houseButton" class="btn nav__btn nav__btn--active">
+                <img
+                  src="asserts/images/icons/house-icon.svg"
+                  data-type="house"
+                />House
               </button>
-              <button class="btn nav__btn--inactive">
+              <button id="villaButton" class="btn nav__btn" data-type="villa">
                 <img src="asserts/images/icons/villa.svg" />Villa
               </button>
-              <button class="btn nav__btn--inactive">
+              <button
+                id="apartmentButton"
+                class="btn nav__btn"
+                data-type="apartment"
+              >
                 <img src="asserts/images/icons/apartment.svg" />Apartment
               </button>
             </div>
             <div class="nav__controls">
-              <button class="btn nav__controls-btn nav__controls-btn--left">
-                <img src="asserts/images/icons/arrow-left.svg" alt="Previous" />
+              <button
+                id="scroll-left"
+                class="btn nav__controls-btn nav__controls-btn"
+              >
+                <img
+                  src="asserts/images/icons/arrow-left.svg"
+                  id="arrow-left"
+                  class="arrow-img"
+                  alt="Previous"
+                />
               </button>
-              <button class="btn nav__controls-btn nav__controls-btn--right">
-                <img src="asserts/images/icons/arrow-right.svg" alt="Next" />
+              <button
+                id="scroll-right"
+                class="btn nav__controls-btn nav__controls-btn--active"
+              >
+                <img
+                  src="asserts/images/icons/arrow-right.svg"
+                  id="arrow-right"
+                  class="arrow-img"
+                  alt="Next"
+                />
               </button>
             </div>
           </nav>
-          <div class="property-card">
+          <div id="houses" class="property-card">
             <div class="property-card__item">
               <div class="property-card__image">
                 <a href="#" class="link">
-                  <img src="asserts/images/houses/roselands.jpg" />
+                  <img
+                    src="asserts/images/houses/roselands.jpg"
+                    class="card-image"
+                  />
                 </a>
                 <div class="property-card__badge property-card__badge-popular">
                   <img
@@ -78,7 +105,10 @@
             <div class="property-card__item">
               <div class="property-card__image">
                 <a href="#" class="link">
-                  <img src="asserts/images/houses/woodlandside.jpg" />
+                  <img
+                    src="asserts/images/houses/woodlandside.jpg"
+                    class="card-image"
+                  />
                 </a>
                 <div class="property-card__badge property-card__badge-new">
                   <img
@@ -108,7 +138,10 @@
             <div class="property-card__item">
               <div class="property-card__image">
                 <a href="#" class="link">
-                  <img src="asserts/images/houses/lighthouse.jpg" />
+                  <img
+                    src="asserts/images/houses/lighthouse.jpg"
+                    class="card-image"
+                  />
                 </a>
                 <div class="property-card__badge property-card__badge-deals">
                   <img
@@ -136,7 +169,13 @@
             </div>
 
             <div class="property-card__item">
-              <div class="property-card__image property-card__image--fourth">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/cosmos.jpg"
+                    class="card-image"
+                  />
+                </a>
                 <div class="property-card__badge property-card__badge-popular">
                   <img
                     src="asserts/images/icons/fire.svg"
@@ -158,6 +197,330 @@
                 <div class="user-info">
                   <p class="user-name">Jenny Wilson</p>
                   <p class="user-city">Preston Rd. Inglewood, Maine 98380</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="villa" class="property-card property-card--hidden">
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/bowl.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-new">
+                  <img
+                    src="asserts/images/icons/house-icon-blue.svg"
+                    class="property-badge-icon"
+                  />
+                  New House
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Cat In Bowl</h1>
+                <p class="property-card__price">$ 12.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/shpioniro.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Shpioniro Golubino</p>
+                  <p class="user-city">Undefined, Ocean</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/gigachad.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-popular">
+                  <img
+                    src="asserts/images/icons/fire.svg"
+                    class="property-badge-icon"
+                  />
+                  Popular
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Giga Cat</h1>
+                <p class="property-card__price">$ 100.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/legend.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Real Legend</p>
+                  <p class="user-city">Tik Tok, Youtube Shorts</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/nooo.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-deals">
+                  <img
+                    src="asserts/images/icons/green-wallet.svg"
+                    class="property-badge-icon"
+                  />
+                  Best Deals
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Kid In Basement</h1>
+                <p class="property-card__price">$ 12.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/sunshine.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">You Are</p>
+                  <p class="user-city">My, Sunshine</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/satan.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-deals">
+                  <img
+                    src="asserts/images/icons/green-wallet.svg"
+                    class="property-badge-icon"
+                  />
+                  Best Deals
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Biblian Cat</h1>
+                <p class="property-card__price">$ 1.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/smile.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Smile Door</p>
+                  <p class="user-city">Some place, Bikini Bottom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="apartment" class="property-card property-card--hidden">
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/all_bmw.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-popular">
+                  <img
+                    src="asserts/images/icons/fire.svg"
+                    class="property-badge-icon"
+                  />
+                  Popular
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">New BMW Car</h1>
+                <p class="property-card__price">$ 1.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/HaisenBurger.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Haisen Burger</p>
+                  <p class="user-city">Kentucky Fried Chicken</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/angry_granny.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-new">
+                  <img
+                    src="asserts/images/icons/house-icon-blue.svg"
+                    class="property-badge-icon"
+                  />
+                  New House
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Angry Granny</h1>
+                <p class="property-card__price">$ 32.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/HaisenEgg.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Haisen Egg</p>
+                  <p class="user-city">Desert, Safari</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/real_mouse.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-new">
+                  <img
+                    src="asserts/images/icons/house-icon-blue.svg"
+                    class="property-badge-icon"
+                  />
+                  New House
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Ehm</h1>
+                <p class="property-card__price">$ 54.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/HaisenMuslim.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Haisen Muslim</p>
+                  <p class="user-city">SAY MY NAME</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img src="asserts/images/houses/wth.jpg" class="card-image" />
+                </a>
+                <div class="property-card__badge property-card__badge-popular">
+                  <img
+                    src="asserts/images/icons/fire.svg"
+                    class="property-badge-icon"
+                  />
+                  Popular
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Horse Smoking??</h1>
+                <p class="property-card__price">$ 75.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/pigg.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">I dunno how name it</p>
+                  <p class="user-city">Alien, My 98380</p>
+                </div>
+              </div>
+            </div>
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img src="asserts/images/houses/idk.jpg" class="card-image" />
+                </a>
+                <div class="property-card__badge property-card__badge-deals">
+                  <img
+                    src="asserts/images/icons/green-wallet.svg"
+                    class="property-badge-icon"
+                  />
+                  Best Deals
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">Me rn fr</h1>
+                <p class="property-card__price">$ 25.000.000</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/like.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Cat Like That</p>
+                  <p class="user-city">In House, 200km to u</p>
+                </div>
+              </div>
+            </div>
+            <div class="property-card__item">
+              <div class="property-card__image">
+                <a href="#" class="link">
+                  <img
+                    src="asserts/images/houses/rigby.jpg"
+                    class="card-image"
+                  />
+                </a>
+                <div class="property-card__badge property-card__badge-new">
+                  <img
+                    src="asserts/images/icons/house-icon-blue.svg"
+                    class="property-badge-icon"
+                  />
+                  New House
+                </div>
+              </div>
+              <div class="property-card__details">
+                <h1 class="property-card__title">His Name Rigby</h1>
+                <p class="property-card__price">$ 99.999.999</p>
+              </div>
+              <div class="user">
+                <img
+                  src="asserts/images/avatars/goth_bro.jpg"
+                  class="avatar user__avatar"
+                  alt="user image"
+                />
+                <div class="user-info">
+                  <p class="user-name">Goth Bro</p>
+                  <p class="user-city">Twitter, Now X</p>
                 </div>
               </div>
             </div>
@@ -642,5 +1005,6 @@
       <div class="blur page-blur"></div>
       <div class="blur page-blur--second"></div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  :root {
+    --section-width: 760px;
+    --main-width: 760px;
+  }
+  body {
+    scrollbar-width: none;
+  }
+
+  .recommendation-section {
+    width: 760px;
+  }
+  .recommendation-section__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .property-card {
+    overflow-x: scroll;
+    width: 760px;
+  }
+}

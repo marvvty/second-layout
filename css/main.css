@@ -264,7 +264,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 130px;
-  max-width: var(--section-width);
+  width: 1280px;
   height: 460px;
 }
 .main__title-wrapper {

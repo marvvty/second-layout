@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   :root {
     --section-width: 760px;
     --main-width: 760px;
@@ -6,9 +6,34 @@
   body {
     scrollbar-width: none;
   }
-
+  .recommendation-section__nav {
+    max-width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .title-section {
+    align-items: center;
+  }
+  .title-section__wrapper {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .nav__buttons {
+    flex-direction: column;
+    align-self: center;
+    max-width: 100%;
+  }
+  .nav__btn {
+    width: 750px;
+    justify-content: center;
+  }
+  .nav__controls {
+    display: none;
+  }
   .recommendation-section {
-    width: 760px;
+    width: 100%;
   }
   .recommendation-section__nav {
     flex-direction: column;
@@ -17,5 +42,31 @@
   .property-card {
     overflow-x: scroll;
     width: 760px;
+  }
+  .main__content,
+  .slider,
+  .articles,
+  .subscribe-section,
+  .footer {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .nav__btn {
+    width: 400px;
+  }
+  .property-card {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .recommendation-section__nav {
+    width: 100%;
+  }
+  .property-card {
+    width: 360px;
+  }
+  .nav__btn {
+    width: 350px;
   }
 }

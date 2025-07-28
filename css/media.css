@@ -1,13 +1,50 @@
+@media (max-width: 1200px) {
+  .recommendation-section__nav {
+    width: 1000px;
+  }
+  .property-card {
+    width: 1000px;
+    overflow-x: scroll;
+  }
+  .main__content {
+    width: 1000px;
+    gap: 50px;
+  }
+  .list {
+    width: 1000px;
+    overflow-x: scroll;
+  }
+  .article-list {
+    gap: 10px;
+    width: 1000px;
+    align-items: center;
+  }
+  .featured-card__image {
+    width: 400px;
+  }
+  .featured-card__content {
+    width: 400px;
+  }
+  .subscribe-bg {
+    width: 1000px;
+  }
+  .footer {
+    width: 1000px;
+  }
+}
 @media (max-width: 810px) {
   :root {
     --section-width: 760px;
     --main-width: 760px;
   }
-  body {
-    scrollbar-width: none;
+  .main {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .recommendation-section__nav {
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -15,6 +52,7 @@
   }
   .title-section {
     align-items: center;
+    z-index: 10;
   }
   .title-section__wrapper {
     flex-direction: column;
@@ -33,7 +71,7 @@
     display: none;
   }
   .recommendation-section {
-    width: 100%;
+    height: 100%;
   }
   .recommendation-section__nav {
     flex-direction: column;
@@ -43,30 +81,172 @@
     overflow-x: scroll;
     width: 760px;
   }
-  .main__content,
-  .slider,
-  .articles,
-  .subscribe-section,
-  .footer {
+  .property-card__title {
+    font-size: 22px;
+  }
+  .property-card__price {
+    font-size: 18px;
+  }
+  .main__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 100%;
+  }
+  .contact-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container {
+    position: relative;
+    width: 500px;
+  }
+  .image-wrapper__video-image {
+    position: relative;
+  }
+  .gallery__column {
+    position: absolute;
+    top: 70%;
+    left: 0;
+  }
+  .image-wrapper__play-button {
+    left: 45%;
+  }
+  .list {
+    width: 800px;
+    overflow-x: scroll;
+  }
+  .pagination {
     display: none;
+  }
+  .article-list {
+    flex-direction: column;
+  }
+  .subscribe-bg {
+    width: 750px;
+    height: 100%;
+    border-radius: 32px;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 750px;
+    gap: 30px;
+  }
+  .footer__list-wrapper {
+    flex-wrap: wrap;
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .nav__btn {
+    width: 500px;
+  }
+  .property-card {
+    width: 500px;
   }
 }
 @media (max-width: 450px) {
-  .nav__btn {
-    width: 400px;
-  }
-  .property-card {
-    width: 400px;
-  }
-}
-@media (max-width: 400px) {
   .recommendation-section__nav {
     width: 100%;
+  }
+  .main__content {
+    width: 350px;
+  }
+  .main__title-wrapper {
+    width: 350px;
+  }
+  .main__blur {
+    width: 0px;
+    height: 0px;
+  }
+  .title-section__container {
+    width: 350px;
+  }
+  .title-section__title {
+    align-self: auto;
+    text-align: center;
+    width: 350px;
+  }
+  .title-section__description {
+    width: 350px;
+    text-align: center;
   }
   .property-card {
     width: 360px;
   }
+  .property-card__image {
+    height: 300px;
+    width: 300px;
+  }
+  .details__item {
+    width: 150px;
+  }
+  .details__row {
+    gap: 0;
+    width: auto;
+  }
+  .image-wrapper__video,
+  .container,
+  .image-wrapper__video-image,
   .nav__btn {
+    width: 350px;
+  }
+  .image-wrapper__image--sofa {
+    width: 160px;
+    height: 140px;
+  }
+  .articles-section {
+    width: 350px;
+  }
+  .card {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+  .list {
+    width: 350px;
+  }
+  .slider-list__image {
+    width: 380px;
+  }
+  .review {
+    width: 300px;
+    bottom: 1%;
+  }
+  .review__user {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+  }
+  .card__content {
+    align-items: center;
+  }
+  .article-list {
+    width: 350px;
+  }
+  .card-list {
+    width: 350px;
+  }
+  .card__image {
+    display: none;
+  }
+  .wrapper {
+    width: 350px;
+  }
+  .subscribe-bg {
+    width: 350px;
+  }
+  .subscribe-form__input {
+    width: 120px;
+  }
+  .footer {
+    width: 350px;
+  }
+  .footer__title-section {
     width: 350px;
   }
 }

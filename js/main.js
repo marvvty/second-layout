@@ -16,21 +16,24 @@ houseButton.addEventListener("click", showHouses);
 villaButton.addEventListener("click", showVilla);
 apartmentButton.addEventListener("click", showApartment);
 
+const card = document.querySelector(".property-card__item");
+const cardWidth = card.offsetWidth;
+
 function buttonScrollRight() {
   const container = getVisibleCards();
-
   container.scrollBy({
-    left: 340,
+    left: cardWidth + 25,
     behavior: "smooth",
   });
+  setTimeout(checkScrollButtons, 526);
 }
 function buttonScrollLeft() {
   const container = getVisibleCards();
-
   container.scrollBy({
-    left: -340,
+    left: -cardWidth - 25,
     behavior: "smooth",
   });
+  setTimeout(checkScrollButtons, 526);
 }
 function checkScrollButtons() {
   const container = getVisibleCards();
@@ -52,6 +55,7 @@ function checkScrollButtons() {
     changeIcon("arrow-right", "asserts/images/icons/arrow-right.svg");
   }
 }
+
 function changeIcon(iconId, iconPath) {
   document.getElementById(iconId).src = iconPath;
 }
@@ -93,6 +97,3 @@ function getVisibleCards() {
     return apartmentContainer;
   }
 }
-[housesContainer, villaContainer, apartmentContainer].forEach((container) => {
-  container.addEventListener("scroll", checkScrollButtons);
-});

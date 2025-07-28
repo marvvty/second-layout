@@ -30,6 +30,7 @@
   }
   .footer {
     width: 1000px;
+    gap: 0px;
   }
 }
 @media (max-width: 810px) {

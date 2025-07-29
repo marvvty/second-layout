@@ -25,7 +25,7 @@ function buttonScrollRight() {
     left: cardWidth + 25,
     behavior: "smooth",
   });
-  setTimeout(checkScrollButtons, 526);
+  setTimeout(checkScrollButtons, 236);
 }
 function buttonScrollLeft() {
   const container = getVisibleCards();
@@ -33,21 +33,21 @@ function buttonScrollLeft() {
     left: -cardWidth - 25,
     behavior: "smooth",
   });
-  setTimeout(checkScrollButtons, 526);
+  setTimeout(checkScrollButtons, 236);
 }
 function checkScrollButtons() {
   const container = getVisibleCards();
   const scrollLeft = container.scrollLeft;
   const scrollWidth = container.scrollWidth;
   const clientWidth = container.clientWidth;
-  if (scrollLeft <= 0) {
+  if (scrollLeft <= 50) {
     btnScrollLeft.classList.remove("nav__controls-btn--active");
     changeIcon("arrow-left", "asserts/images/icons/arrow-left.svg");
   } else {
     btnScrollLeft.classList.add("nav__controls-btn--active");
     changeIcon("arrow-left", "asserts/images/icons/chevron-left.svg");
   }
-  if (scrollLeft + clientWidth >= scrollWidth) {
+  if (scrollLeft + clientWidth >= scrollWidth - 50) {
     btnScrollRight.classList.remove("nav__controls-btn--active");
     changeIcon("arrow-right", "asserts/images/icons/chevron-right.svg");
   } else {

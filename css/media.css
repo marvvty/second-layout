@@ -235,6 +235,12 @@
   .card__image {
     display: none;
   }
+  .featured-card__content {
+    width: 350px;
+  }
+  .featured-card__title {
+    width: 350px;
+  }
   .wrapper {
     width: 350px;
   }

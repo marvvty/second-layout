@@ -658,13 +658,16 @@ body {
   max-width: var(--section-width);
   gap: 24px;
   height: 312px;
+  width: 1200px;
+  background: linear-gradient(
+    47deg,
+    rgba(142, 183, 250, 1) 0%,
+    rgba(242, 252, 248, 1) 63%,
+    rgba(142, 178, 250, 1) 100%
+  );
+  border-radius: 16px;
 }
-.subscribe-bg {
-  position: absolute;
-  object-fit: cover;
-  border-radius: 8px;
-  z-index: 0;
-}
+
 .subscribe-section__title {
   width: 422px;
   text-align: center;

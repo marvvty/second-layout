@@ -562,7 +562,7 @@ body {
 .blur {
   position: absolute;
   opacity: 50%;
-  filter: blur(90px);
+  filter: blur(120px);
   z-index: -5;
   width: 300px;
   height: 300px;
@@ -660,9 +660,11 @@ body {
   height: 312px;
   width: 1200px;
   background: linear-gradient(
-    47deg,
+    123deg,
     rgba(142, 183, 250, 1) 0%,
+    #ebe4ed 43%,
     rgba(242, 252, 248, 1) 63%,
+    #ebe4ed 87%,
     rgba(142, 178, 250, 1) 100%
   );
   border-radius: 16px;
@@ -748,6 +750,6 @@ body {
 }
 .page-blur--second {
   background: linear-gradient(#b9ff82 40%);
-  bottom: 0;
-  right: 200px;
+  bottom: -10px;
+  right: 90px;
 }
